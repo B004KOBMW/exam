@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - CulTravel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CulTravel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tours.html">Туры</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-card">
+            <h2>Свяжитесь с нами</h2>
+            <p>Мы всегда рады помочь вам и ответить на все вопросы.</p>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:support@cultravel.com">support@cultravel.com</a></p>
+                <p><strong>Телефон:</strong> +7 (777) 123-45-67</p>
+                <p><strong>Адрес:</strong> Ул. Владимира Шухова, 19, , Казахстан</p>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="contact-form">
+            <h3>Напишите нам</h3>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                <input type="email" id="email" name="email" placeholder="Ваш Email" required>
+                <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <!-- Карта -->
+        <section class="map">
+            <h3>Наше местоположение</h3>
+            <iframe src="https://go.2gis.com/QmRTI"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CulTravel. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

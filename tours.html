@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туры - CulTravel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CulTravel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Выберите свой музейный тур</h2>
+
+        <!-- Фильтр -->
+        <div class="filter">
+            <button data-category="all">Все</button>
+            <button data-category="history">Исторические</button>
+            <button data-category="art">Художественные</button>
+            <button data-category="science">Научные</button>
+        </div>
+
+        <!-- Карточки туров -->
+        <div class="tour-container">
+            <div class="tour-card" data-category="history">
+                <img src="history_museum.jpg" alt="Исторический музей">
+                <h3>Исторический музей</h3>
+                <p>Путешествие в прошлое человечества.</p>
+                <p class="price">Цена: 1200₸</p>
+                <a href="details.html" class="details-button">Подробнее</a>
+                <a href="booking.html" class="button">Забронировать</a>
+            </div>
+
+            <div class="tour-card" data-category="art">
+                <img src="art_museum.jpg" alt="Музей искусства">
+                <h3>Музей искусства</h3>
+                <p>Откройте шедевры мирового искусства.</p>
+                <p class="price">Цена: 1500₸</p>
+                <a href="details.html" class="details-button">Подробнее</a>
+                <a href="booking.html" class="button">Забронировать</a>
+            </div>
+
+            <div class="tour-card" data-category="science">
+                <img src="science_museum.jpg" alt="Научный музей">
+                <h3>Научный музей</h3>
+                <p>Интерактивные экспонаты и открытия.</p>
+                <p class="price">Цена: 1000₸</p>
+                <a href="details.html" class="details-button">Подробнее</a>
+                <a href="booking.html" class="button">Забронировать</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CulTravel. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

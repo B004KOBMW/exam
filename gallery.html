@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея музеев - CulTravel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">CulTravel</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="tours.html">Туры</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Галерея музеев</h2>
+
+        <!-- Фильтрация изображений -->
+        <div class="filter">
+            <button data-category="all">Все</button>
+            <button data-category="history">Исторические</button>
+            <button data-category="art">Художественные</button>
+            <button data-category="science">Научные</button>
+        </div>
+
+        <!-- Галерея изображений -->
+        <div class="gallery-grid">
+            <img src="gallery1.jpg" alt="Исторический экспонат" class="gallery-item" data-category="history">
+            <img src="gallery2.jpg" alt="Картина" class="gallery-item" data-category="art">
+            <img src="gallery3.jpg" alt="Археологическая находка" class="gallery-item" data-category="history">
+            <img src="gallery4.jpg" alt="Современное искусство" class="gallery-item" data-category="art">
+            <img src="gallery5.jpg" alt="Научный экспонат" class="gallery-item" data-category="science">
+            <img src="gallery7.jpg" alt="Техническая модель" class="gallery-item" data-category="science">
+            <img src="gallery8.jpg" alt="Картина" class="gallery-item" data-category="art">
+            <img src="gallery9.jpg" alt="Исторический экспонат" class="gallery-item" data-category="history">
+            
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CulTravel. Все права защищены.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
